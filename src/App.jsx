@@ -10,7 +10,8 @@ function App() {
   const [resume, setResume] = useState({})
 
   const callApi = async (sign) => {
-    console.log(await callback(sign))
+    setResume(await callback(sign))
+    console.log(resume)
   }
 
   return (
@@ -20,7 +21,7 @@ function App() {
       </header>
       <main>
         <Signs handleCallApi={callApi} />
-        <Resume />
+        {resume != {} && <Resume resume={resume} />}
       </main>
       <footer>
         <p>Made by <a target="_blank" href="https://github.com/davitostes">Davi Tostes</a></p>

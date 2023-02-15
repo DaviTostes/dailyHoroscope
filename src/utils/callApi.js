@@ -6,7 +6,6 @@ const callback = async (sign) => {
     {
       sign: sign,
       mood: response.data.mood,
-      luckyNumber: response.data.lucky_number,
       description: response.data.description,
       currentDate: response.data.current_date
     }
