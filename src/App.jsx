@@ -11,7 +11,6 @@ function App() {
 
   const callApi = async (sign) => {
     setResume(await callback(sign))
-    console.log(resume)
   }
 
   return (

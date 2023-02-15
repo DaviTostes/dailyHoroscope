@@ -1,7 +1,7 @@
 import './styles.css'
 
 const Resume = ({resume}) => {
-  const {sign, mood, luckyNumber, description, currentDate} = resume
+  const {sign, mood, description, currentDate} = resume
 
   return (
     <div className="resume">
